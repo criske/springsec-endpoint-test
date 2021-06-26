@@ -55,7 +55,7 @@ public final class MyTest {
 }
 ```
 
-`AuthorizedRequestsProbe` can use [HttpSecurity#authroizeRequests](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/builders/HttpSecurity.html#authorizeRequests(org.springframework.security.config.Customizer)) customizer but for that it needs a little work because that customizer needs a [HttpSecurity](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/builders/HttpSecurity.html) builder while
+`AuthorizedRequestsProbe` can use [HttpSecurity#authroizeRequests](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/builders/HttpSecurity.html#authorizeRequests(org.springframework.security.config.Customizer)) customizer but for that it needs a little work because that customizer needs a [HttpSecurity](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/builders/HttpSecurity.html) builder as generic type while
 `AuthorizedRequestsProbe` accepts customizer with any [HttpSecurityBuilder](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/annotation/web/HttpSecurityBuilder.html)
 
 To convey this, a generic customizer is needed.
