@@ -105,8 +105,7 @@ public final class SecurityTest {
 `AuthorizedRequestsProbe` can be used in integration tests too.
 In this case `AuthorizedRequestsProbe#usingFilterSecurityInterceptor(context)` factory method will
 extract [FilterInvocationSecurityMetadataSource](https://docs.spring.io/spring-security/site/docs/4.2.19.RELEASE/apidocs/org/springframework/security/web/access/intercept/FilterInvocationSecurityMetadataSource.html) created by HttpSecurity builder from 
-[FilterSecurityInterceptor](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.html) via
-the exposed [FilterChainProxy](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/FilterChainProxy.html) bean.
+[FilterSecurityInterceptor](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/access/intercept/FilterSecurityInterceptor.html)(filter is obtained from the filter list of the exposed [FilterChainProxy](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/FilterChainProxy.html) bean).
 
 ```java
 @RunWith(SpringRunner.class)
