@@ -1,6 +1,6 @@
 ## Spring security endpoint tester
 
-Small utility to test authorization endpoints without the need to run full integration tests for spring-security and spring-mvc.
+Small utility to test authorization on endpoints without the need to run full integration tests for spring-security and spring-mvc.
 
 All done in unit tests - no need for spring integration test ceremony(no SpringRunner, @SpringBootTest, @WebMvcTest etc...).
 
