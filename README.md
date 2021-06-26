@@ -6,7 +6,8 @@ All done in unit tests - no need for spring integration test ceremony(no SpringR
 
 ### Usage in unit tests
 ```java
-public final class MyTest {
+public final class SecurityTest {
+
     static AuthorizedRequestsProbe probe = AuthorizedRequestsProbe
         .withCustomizer(config ->
             config
