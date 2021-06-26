@@ -4,7 +4,7 @@ Small utility to test authorization on endpoints without the need to run full in
 
 All done in unit tests - no need for spring integration test ceremony(no SpringRunner, @SpringBootTest, @WebMvcTest etc...).
 
-### Usage in integration tests
+### Usage in unit tests
 ```java
 public final class MyTest {
     static AuthorizedRequestsProbe probe = AuthorizedRequestsProbe
